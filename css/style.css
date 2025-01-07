@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Raleway", serif;
+}
+
+body{
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    min-height: 100vh;
+    .btn_enviar{
+        background-color: #4CABA6;
+    }
+    .header{
+        .header_navbar{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            a{
+                margin-left: 20px;
+            }
+        }
+    }
+    .contendor_img_bienvenida{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        .main_bienvenida_img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);   
+        }
+        .link_img_bienvenida{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            a{
+                color: white;
+                text-decoration: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+
+    }
+    .imagen_bienvenida{
+        width: 70%;
+        margin: 0 auto;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 20px;
+        h2{
+            flex: 2;
+            text-align: left;
+            line-height: 1.5;
+            font-size: x-large;
+            border-bottom: black solid 2px;
+        }
+        .box_img_bienvenida{
+            flex: 2;
+            height: auto;
+            align-items: center;
+            margin-left: 20px;
+            .img_bienvenida1{
+                border-radius: 10px;
+                width: 70%;
+                margin-left: 50px;
+            }
+            .img_bienvenida2{
+                border-radius: 10px;
+                width: 60%;
+                margin-top: 40px;
+            }
+        }
+    }
+    .box_bienvenida{
+        background-color: bisque;
+        text-align: left;
+        margin-top: 50px;
+        padding: 70px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: #CDDCDC;
+        background-image: radial-gradient(at 50% 100%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%);
+        background-blend-mode: screen, overlay;
+        clip-path: polygon(0 100%, 100% 100%, 100% 40%, 0 0);
+        .texto_bienvenida{
+            width: 60%;
+            margin-top: 50px;
+            margin-left: 40px;
+            p{
+                font-size: larger;
+            }
+        }
+    }
+    .box_carrusel_texto{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px;
+        margin-top: 40px;
+        p{
+            border-bottom: black solid 2px;
+            padding-bottom: 40px;
+        }
+    }
+    .box_carrusel{
+        width: 40%;
+        padding: 20px;
+        margin: 0 auto;
+        .replacement-image {
+            display: none; 
+          }
+    }
+    
+    .box_contacto_inicio{
+        text-align: center;
+        width: 70%;
+        margin: 200px auto;
+        .texto_contacto_inicio{
+            margin: 0 auto;
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+            img{
+                padding: 20px;
+            }
+            h3{
+                margin: auto 0;
+            }
+        }
+        .box_formulario_inicio{
+            margin: 50px auto;
+            text-align: left;
+            width: 90%;
+        }
+    }
+
+
+
+
+
+    .main_trabajos{
+        text-align: center;
+        .box_trabajos_titulo{
+            width: 60%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-evenly;
+            .triangulo_trabajos{
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid transparent;
+                border-left: 100px solid #4C4A59;
+                margin: auto 0;
+            }
+            .titulo_trabajos{
+                width: 90%;
+                margin: auto 0;
+                h1{
+                    width: 70%;
+                    margin: 20px auto 10px auto ;
+                    border-bottom: black solid 2px;
+                }
+                .subtitulo_trabajos{
+                    width: 70%;
+                    margin: 0 auto;
+                    font-size: larger;
+                    font-weight: 500;
+                }
+            }
+        }
+        .seccion_trabajos{
+            width: 90%;
+            margin: 90px auto;
+            .card{
+                margin-bottom: 70px;
+                border-radius: 10px;
+                .imagenes_trabajo{
+                    display: flex;
+                    flex-wrap: wrap; 
+                    gap: 10px; 
+                    justify-content: center;
+                }
+                .modal img {
+                    display: none;
+                }
+                
+                .modal img.active {
+                    display: block;
+                    max-width: 90%;
+                    max-height: 90%;
+                }
+                
+                .modal.active {
+                    display: flex;
+                }
+                
+                .modal {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.8);
+                    justify-content: center;
+                    align-items: center;
+                }
+                .close-btn {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    background-color: transparent;
+                    border: none;
+                    font-size: 2rem;
+                    color: white;
+                    cursor: pointer;
+                  }
+                img{
+                    flex: 1 1 calc(50% - 10px); 
+                    max-width: calc(50% - 10px); 
+                    height: auto; 
+                    border-radius: 10px;
+                    cursor: pointer;
+                    }
+                p{
+                    font-size: larger;
+                }
+                }
+            }
+            
+        }
+
+
+
+
+        .box_sobreNostros{
+            text-align: center;
+            p{
+                font-size: larger;
+            }
+            .text1{
+                display: flex;
+                flex-direction: column;
+                margin: 50px auto;
+                width: 90%;
+            }
+            .text2{
+                display: flex;
+                flex-direction: column;
+                margin: 100px auto;
+                width: 70%;
+            }
+            .box_imagenes_nosotros{
+                display: flex;
+                flex-direction: row; /* Coloca las imágenes en columna */
+                gap: 15px; 
+                margin: 60px auto;
+                img{
+                    width: 200px; /* Tamaño de las imágenes */
+                    height: 200px;
+                    border-radius: 50%; /* Hace las imágenes redondas */
+                    object-fit: cover; /* Ajusta el contenido de la imagen */
+                    border: 2px solid #ccc;
+                    margin: auto 50px;
+                }
+            }
+        }
+
+
+
+
+
+        .box_contacto{
+            text-align: center;
+            width: 70%;
+            margin: 50px auto;
+            flex: 1;
+            min-height: 80vh;
+            .texto_contacto{
+                margin: 0 auto;
+                width: 40%;
+                display: flex;
+                justify-content: space-evenly;
+                img{
+                    padding: 20px;
+                }
+                h3{
+                    margin: auto 0;
+                }
+            }
+            .box_formulario{
+                margin: 50px auto;
+                text-align: left;
+                width: 90%;
+            }
+    }
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    border-top: black solid 3px;
+
+    .footer_contacto{
+        margin-top: 5px;
+        margin-right: 40px;
+        a{
+            text-decoration:none;
+            color: black;
+            padding: 5px;
+            &:hover{
+                border-bottom: black 2px solid;
+            }
+        }
+    }
+    .footer_social{
+        margin-bottom: 5px;
+        a{
+            margin: auto 10px;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+}
+
+
+
+@media (max-width: 992px){
+    body .header .header_navbar{
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            a{
+                margin-left: 0;
+            }
+        }
+    
+    body .imagen_bienvenida{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        h2{
+            width: 70%;
+        }
+        .box_img_bienvenida{
+            width: 90%;
+            margin-left: 0;
+            .img_bienvenida1{
+                width: 60%;
+                margin-left: 0;
+            }
+        }
+    } 
+    body .box_bienvenida{
+        .texto_bienvenida{
+            width: 90%;
+            margin-top: 150px;
+            margin-left: 0;
+            p{
+                font-size: medium;
+            }
+        }
+    }
+
+    body .box_carrusel_texto{
+        width: 90%;
+    }
+
+    body .box_carrusel{
+        width: 80%;
+        margin: 0 auto;
+        #carouselExampleDark{
+            display: none;
+        }
+        .replacement-image {
+            display: block; 
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    body .box_contacto_inicio{
+        margin: 100px auto;
+        .texto_contacto_inicio{
+            flex-direction: row;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            h3{
+                width: 60%;
+            }
+            img{
+                margin: auto;
+            }
+            } 
+        }
+
+    body .footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .footer_contacto{
+            margin: 5px auto;
+        }
+    }
+
+    
+
+    body .main_trabajos{
+        text-align: center;
+        .box_trabajos_titulo{
+            width: 90%;
+        .triangulo_trabajos{
+            display: none;
+        }
+        .titulo_trabajos{
+            width: 100%;
+        }
+    }
+    }
+
+    body .box_sobreNostros{
+        .img_desaparece{
+            display: none;
+        }
+        .box_imagenes_nosotros{
+            img{
+                
+                margin: auto auto;
+            }
+        }
+    }
+
+    body .box_contacto{
+        margin: 100px auto;
+        .texto_contacto{
+            flex-direction: row;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            h3{
+                width: 60%;
+            }
+            img{
+                margin: auto;
+            }
+            } 
+        }
+}
+

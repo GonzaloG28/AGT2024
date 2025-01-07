@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TITULO</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid header_logo">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="header_navbar navbar-nav">
+                
+                    <a class="nav-link" href="../index.html">INICIO</a>
+                    <a class="nav-link" href="trabajos.html">TRABAJOS</a>
+                    <a class="nav-link" href="sobreNosotros.html">SOBRE NOSTROS</a>
+                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+  
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="box_contacto">
+          <div class="texto_contacto">
+            <img src="../img/circulo-de-flecha.png" alt="flecha">
+            <h3>SOLICITA TU SERVICIO</h3>
+          </div>
+          <div class="box_formulario">
+            <form class="row g-3">
+              <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationDefault01" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationDefault02" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Correo</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                  <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Ciudad</label>
+                <select class="form-select" id="validationDefault04" required>
+                  <option selected disabled>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-9">
+                <label for="validationDefault03" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+              </div>
+              <div class="col-12">
+                <div>
+                  <label for="exampleFormControlTextarea1" class="form-label">Escribe tu solicitud</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn_enviar" type="submit">Enviar</button>
+              </div>
+            </form>
+        </div>
+      </main>
+      <footer class="footer w-100">
+        <div class="footer_contacto h-50">
+            <a class="h-100" href="./sobreNosotros.html">SOBRE NOSOTROS</a>
+        </div>
+        <div class="footer_social h-50">
+            <a href="" target="_blank"><img src="../img/facebook.png" alt="logo"></a>
+            <a href="" target="_blank"><img src="../img/facebook.png" alt="logo"></a>
+            <a href="" target="_blank"><img src="../img/facebook.png" alt="logo"></a>
+        </div>
+    </footer>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
