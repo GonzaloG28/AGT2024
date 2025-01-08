@@ -442,7 +442,10 @@ body{
         .titulo_trabajos{
             width: 100%;
         }
-    }
+        }
+        .box_seccion_trabajos{
+            margin: 0 auto;
+        }
     }
 
     body .box_sobreNostros{
