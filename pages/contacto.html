@@ -35,37 +35,43 @@
             <h3>SOLICITA TU SERVICIO</h3>
           </div>
           <div class="box_formulario">
-            <form class="row g-3">
+            <form class="row g-3" id="contact-form">
               <div class="col-md-4">
                 <label for="validationDefault01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationDefault01" required>
+                <input type="text" class="form-control" id="validationDefault01" name="nombre" required>
               </div>
               <div class="col-md-4">
                 <label for="validationDefault02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationDefault02" required>
+                <input type="text" class="form-control" id="validationDefault02" name="apellido" required>
               </div>
               <div class="col-md-4">
                 <label for="validationDefaultUsername" class="form-label">Correo</label>
                 <div class="input-group">
                   <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                  <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                  <input type="text" class="form-control" id="validationDefaultUsername" name="correo"  aria-describedby="inputGroupPrepend2" required>
                 </div>
               </div>
               <div class="col-md-3">
+                <label for="validationDefault03" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" id="validationDefault03" pattern="^\+?[0-9\s\-]+$" name="telefono"  placeholder="Ej: +56 912345678" required>
+              </div>
+              <div class="col-md-3">
                 <label for="validationDefault04" class="form-label">Ciudad</label>
-                <select class="form-select" id="validationDefault04" required>
+                <select class="form-select" id="validationDefault04" name="ciudad" required>
                   <option selected disabled>Choose...</option>
-                  <option>...</option>
+                  <option>Montevideo</option>
+                  <option>Piriapolis</option>
+                  <option>Salto</option>
                 </select>
               </div>
-              <div class="col-md-9">
+              <div class="col-md-6">
                 <label for="validationDefault03" class="form-label">Direccion</label>
-                <input type="text" class="form-control" id="validationDefault03" required>
+                <input type="text" class="form-control" id="validationDefault03" name="direccion" required>
               </div>
               <div class="col-12">
                 <div>
                   <label for="exampleFormControlTextarea1" class="form-label">Escribe tu solicitud</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" name="mensaje" rows="3" required></textarea>
                 </div>
                 </div>
               </div>
@@ -86,5 +92,10 @@
         </div>
     </footer>
       <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      emailjs.init('HXaXCroN2W7FCOWbT'); // Reemplaza TU_PUBLIC_KEY con tu clave pública
+    </script>
+      <script src="../app.js"></script>
 </body>
 </html>

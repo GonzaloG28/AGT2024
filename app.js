@@ -39,3 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+
+    emailjs.sendForm('service_njtfr4j', "template_pkjuvjc", this)
+      .then(function () {
+        alert('Correo enviado con éxito!');
+        document.getElementById('contact-form').reset(); // Limpia el formulario
+      }, function (error) {
+        alert('Error al enviar el correo. Por favor intenta nuevamente.');
+        console.error('Error:', error);
+      });
+  });
